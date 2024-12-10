@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+h1,h2,p {
+    color: white;
+    text-align: center;
+}
+.contact {
+    text-align: center;
+    font-size: 30px;
+    background-color:  gold;
+    width:150px;
+    margin:0 auto;
+
+}
