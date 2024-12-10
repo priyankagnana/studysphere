@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("https://www.shutterstock.com/image-photo/processed-collage-luxury-pattern-black-600nw-2477726467.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.headings {
+    text-align: center;
+    color: #FFA500;
+    padding: 50px 0;
+}
+
+.headings h1 {
+    font-size: 3em;
+    margin-bottom: -50px;
+    position: relative;
+    padding: 20px;
+    display: inline-block;
+    background-color: transparent;
+    color: #FFA500;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.headings h1:hover {
+    border: 2px solid #f1c40f;
+    box-shadow: 0 0 10px #f1c40f, 0 0 20px #f1c40f, 0 0 30px #ffcc00;
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 20px;
+    width: 30rem;
+}
+
+.card {
+    position: relative;
+    left: 0;
+    width: 100rem;
+    border-radius: 5rem;
+    height: 20rem;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    box-shadow: 0 5 12px black;
+    flex: 0.15;
+}
+
+.card img {
+    position: relative;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card:hover {
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 1rem;
+}
