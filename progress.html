@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+    <link href="progress.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">Progress</div>
+    <div class="progress"><div class="progress-bar" style="width: 10 ; text-align:center;" data-label="Loading..."></div></div>
+    <p>Uh oh!! No progress yet! :(</p>
+
+<script>
+    const progressBar = document.getElementsByClassName('progress-bar')[0]
+    setInterval(() => {
+      const computedStyle = getComputedStyle(progressBar)
+      const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
+      progressBar.style.setProperty('--width', width + .1)
+    }, 5)</script>
+</body>
+</html>
