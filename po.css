@@ -80,6 +80,15 @@ nav {
     position: relative;
     left: 100%;
 }
+.nav-list{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    list-style-type:none ;
+    margin:0;
+    padding:0;
+}
+
   
 nav ul {
     display: flex;
@@ -137,8 +146,14 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.audio-player {
+#audio-player {
     margin-top: 20px;
     text-align: center;
+    background-color: goldenrod;
 }
   
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: goldenrod;
+     color: #fff;
+     }
