@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus for 25 minutes, then recharge—Pomodoro turns time into productivity</title>
+    <link rel="stylesheet" href="po.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li id="menu-music">
+            <a href="#">Music</a>
+            <ul id="dropdown-music">
+              <li><a href="#" class="audio-option" data-audio="audio1.mp3">
+                <div class="audio-player">
+                    <audio id="audio-player" controls>
+                      <source src="images/music1.mp3" type="audio/mp3">
+                    </audio>
+                  </div>
+              </a></li>
+              <li><a href="#" class="audio-option" data-audio="audio2.mp3">
+                <div class="audio-player"></div>
+                    <audio id="audio-player" controls>
+                      <source src="images/music2.mp3" type="audio/mp3">
+    
+                    </audio>
+                  </div>
+              </a></li>
+              <li><a href="#" class="audio-option" data-audio="audio3.mp3">
+                <div class="audio-player"></div>
+                    <audio id="audio-player" controls>
+                      <source src="images/music3.mp3" type="audio/mp3">
+    
+                    </audio>
+                  </div>
+              </a></li>
+              <li><a href="#" class="audio-option" data-audio="audio4.mp3">Track 4</a></li>
+              <!-- Add more audios here -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+    <h1 style="color:rgb(237, 239, 227)">Focus for 25 minutes</h1>
+    <div class="video-background">
+        <video autoplay muted loop class="background-video">
+            <source src="images/video2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="main">
+        <div class="timer-circle" id="timer">15:00</div>
+        <div class="control-buttons">
+            <button onclick="togglePauseResume()">Pause</button>
+            <button onclick="restartTimer()">Restart</button>
+            <button onclick="chooseTime()">Choose Time</button>
+        </div>
+    </div>
+    <h4 style="color:rgb(229, 172, 14)"> then recharge—Pomodoro turns time into productivity.</h4>
+
+      
+
+</body>
+
+</html>

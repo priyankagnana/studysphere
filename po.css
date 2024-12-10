@@ -1,0 +1,144 @@
+/* Ensure the body takes up the full height of the page */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:transparent;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.main {
+    background: linear-gradient(to right,black, #FFA500);
+    border-radius: 15px;
+    box-shadow: 0 0 20px white;
+    padding: 10px 20px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+.timer-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(232, 225, 214);
+    border: 8px solid black;
+}
+.control-buttons {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.control-buttons button {
+    background-color: black;
+    color: #FFA500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.control-buttons button:hover {
+    background-color:white ;
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  /* Navigation bar style */
+nav {
+    background-color:#FFA500;
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: 100%;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+
+}
+  
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+    
+}
+  
+nav a {
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+  
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+#menu-music:hover #dropdown-music {
+    display: block;
+}
+  
+#dropdown-music {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #333;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+#dropdown-music li {
+    border-bottom: 1px solid #444;
+}
+  
+#dropdown-music li:last-child {
+    border-bottom: none;
+}
+  
+#dropdown-music a {
+    padding: 10px;
+    text-align: left;
+}
+  
+#dropdown-music a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.audio-player {
+    margin-top: 20px;
+    text-align: center;
+}
+  
